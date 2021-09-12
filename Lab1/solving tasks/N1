@@ -1,0 +1,3 @@
+N=int(input())
+print(' number for the number ', N, ' is ', N+1, '.', sep='')
+print('ious number for the number ', N, ' is ', N-1, '.', sep='')
