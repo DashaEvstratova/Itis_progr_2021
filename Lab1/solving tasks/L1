@@ -1,3 +1,3 @@
-N=str(input())
-N=int(N*100)
+N = str(input())
+N = int(N * 100)
 print(N**2)

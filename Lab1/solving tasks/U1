@@ -1,12 +1,12 @@
-H=int(input())
-A=int(input())
-B=int(input())
-way=0
-count=0
+H = int(input())
+A = int(input())
+B = int(input())
+way = 0
+count = 0
 while way<H:
     count = count + 1
-    way=way+A
+    way = way + A
     if way>=H:
         break
-    way=way-B
+    way = way - B
 print(count)

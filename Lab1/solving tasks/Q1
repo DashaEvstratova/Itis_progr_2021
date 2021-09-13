@@ -1,9 +1,9 @@
-N=int(input())
-hour=N//3600
-minut=str((N-hour*3600)//60)
-second=str((N-hour*3600)%60)
+N = int(input())
+hour = N // 3600
+minut = str((N - hour*3600) // 60)
+second = str((N - hour*3600) % 60)
 if int(minut)<10:
-    minut='0'+minut
+    minut = '0' + minut
 if int(second)<10:
-    second='0'+second
+    second = '0' + second
 print(hour, ':', minut, ':', second, sep='')
