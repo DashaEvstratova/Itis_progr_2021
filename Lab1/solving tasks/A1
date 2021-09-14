@@ -1,4 +1,4 @@
 schoolchild = int(input())
 apples = int(input())
 basket = apples % schoolchild
-print((apples-basket) // schoolchild )
+print((apples-basket) // schoolchild)
