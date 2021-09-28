@@ -9,8 +9,4 @@ elif a == 0 and b == 0:
 elif b % a == 0:
 	print(-b // a)
 else:
-<<<<<<< HEAD
 	print('NO')
-=======
-	print(x)
->>>>>>> 163e4ca074abfe8533039d426b1b4d43e4dcf3bc
