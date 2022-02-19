@@ -1,204 +1,107 @@
-# Itis_progr_2021
+# :wave: The Basics of GitHub 
 
-Kazan Federal University Programming Course
+## 🤓 Course overview and learning outcomes 
 
-Информатика и программирование 1 курс 1 семестр
+The goal of this course is to give you a brief introduction to GitHub. We’ll also provide you with materials for further learning and a few ideas to get you started on our platform. 🚀
 
-Распределение баллов: 
+## :octocat: Git and GitHub
 
-            25 — Домашняя работа
-            5 — Практика
-            20 — Контрольные работы
+Git is a **distributed Version Control System (VCS)**, which means it is a useful tool for easily tracking changes to your code, collaborating, and sharing. With Git you can track the changes you make to your project so you always have a record of what you’ve worked on and can easily revert back to an older version if need be. It also makes working with others easier—groups of people can work together on the same project and merge their changes into one final source!
 
+GitHub is a way to use the same power of Git all online with an easy-to-use interface. It’s used across the software world and beyond to collaborate and maintain the history of projects.
 
-Дедлайны домашних работ
+GitHub is home to some of the most advanced technologies in the world. Whether you're visualizing data or building a new game, there's a whole community and set of tools on GitHub that can get you to the next step. This course starts with the basics of GitHub, but we'll dig into the rest later.
 
+## :octocat: Understanding the GitHub flow 
 
+The GitHub flow is a lightweight workflow that allows you to experiment and collaborate on your projects easily, without the risk of losing your previous work.
 
- У домашек 2 дедлайна с прогрессивной шкалой максимальных баллов. Если студент не сдаёт задание до первого дедлайна, он получает,  максимум 50% от изначальных баллов за задание.     Если он не сдаёт до второго дедлайна, то он не получает ничего. 
- 
- 
-Баллы выставляются за домашние задания. Каждое задание представляет собой спецификацию к программе, которую нужно реализовать. За каждое задание можно получить 1-3 баллов; в некоторых заданиях можно получить дополнительные баллы.
+### Repositories
 
-На выполнение каждого задания дается 3 попытки(3 коммита).
+A repository is where your project work happens--think of it as your project folder. It contains all of your project’s files and revision history.  You can work within a repository alone or invite others to collaborate with you on those files.
 
-За копирование кода у других студентов выставляется оценка в 0 баллов без права на исправление и выдается индивидуальное задание.
- 
-  
-   
-  
-  
-  
-#  Инструменты. Установка
- Git
- Sublime Text, Notepad++
-  
-## Windows
-1. Перейдите по ссылке и скачайте установщик последней доступной версии Python 3 для Windows. https://www.python.org/downloads/
+### Cloning 
 
-Запустите установщик. На первом экране обязательно отметьте галочкой опцию Add Python 3.6 to PATH – это сделает Python 3 доступным в командной строке. Далее следуйте инструкциям, в процессе установки не снимайте галочки у предлагаемых для установки компонентов.
+When a repository is created with GitHub, it’s stored remotely in the ☁️. You can clone a repository to create a local copy on your computer and then use Git to sync the two. This makes it easier to fix issues, add or remove files, and push larger commits. You can also use the editing tool of your choice as opposed to the GitHub UI. Cloning a repository also pulls down all the repository data that GitHub has at that point in time, including all versions of every file and folder for the project! This can be helpful if you experiment with your project and then realize you liked a previous version more. 
+To learn more about cloning, read ["Cloning a Repository"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository). 
 
-2. Установить Sublime Text https://www.sublimetext.com/3 (Package Control -> Install Package -> SublimeRELP)
-3. Настройка Sublime для Input
+### Committing and pushing
+**Committing** and **pushing** are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful **commit message** to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).
 
-Устанавливаем плагин  SublimeRELP
-Нстройки по ссылке https://www.youtube.com/watch?v=xMpr-i7YAsY
+Once you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂
 
-Идем Preferences – Key Bindings и  Вставляем код ниже 
+## 💻 GitHub terms to know 
 
-{ "keys": ["ctrl+b"], "command": "repl_open", "caption": "Python - RUN current file", "id": "repl_python_run", "mnemonic": "d", "args": { "type": "subprocess", "encoding": "utf8", "cmd": ["python", "-i", "-u", "$file_basename"], "cwd": "$file_path", "syntax": "Packages/Python/Python.tmLanguage", "external_id": "python", "extend_env": {"PYTHONIOENCODING": "utf-8"} } }
+### Repositories 
+We mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your ["GitHub dashboard"](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/about-your-personal-dashboard) helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!
 
-Save+ Ctrl+B
+Repositories also contain **README**s. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 
+To learn more about repositories read ["Creating, Cloning, and Archiving Repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories) and ["About README's"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes). 
 
+### Branches
+You can use branches on GitHub to isolate work that you do not want merged into your final project just yet. Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. Typically, you might create a new branch from the default branch of your repository—main. This makes a new working copy of your repository for you to experiment with. Once your new changes have been reviewed by a teammate, or you are satisfied with them, you can merge your changes into the default branch of your repository.
+To learn more about branching, read ["About Branches"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches).
 
-# MacOS
-Мы опишем 2 возможных способа установить Python 3 на MacOS.
+### Forks
+A fork is another way to copy a repository, but is usually used when you want to contribute to someone else’s project. Forking a repository allows you to freely experiment with changes without affecting the original project and is very popular when contributing to open source software projects!
+To learn more about forking, read ["Fork a repo"](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
 
-Способ 1.
-Перейдите по ссылке http://python.org/download/ и скачайте установщик последней доступной версии Python 3 для MacOS.
+### Pull requests
+When working with branches, you can use a pull request to tell others about the changes you want to make and ask for their feedback. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add more changes if need be. You can add specific people as reviewers of your pull request which shows you want their feedback on your changes! Once a pull request is ready-to-go, it can be merged into your main branch.
+To learn more about pull requests, read ["About Pull Requests"](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). 
 
-Запустите установщик, запустите его. Запустите Python.mpkg в открывшемся окне.
 
-Во время установки вам нужно будет ввести административный пароль.
+### Issues
+Issues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!
 
-После установки в папке /Applications появится IDLE.
+For larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them [in this "About Project boards document](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards). You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work!
+You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request.
+To learn more about issues and linking them to your pull requests, read ["About Issues"](https://docs.github.com/en/github/managing-your-work-on-github/about-issues). 
 
-Способ 2.
-С помощью утилиты brew: https://brew.sh/index_ru.html
+### Your user profile
 
-Вам нужно установить brew, а затем набрать в терминале: #brew install python3
-  После установки попробуйте запустить приложение Терминал (установлено по умолчанию) – и наберите python3 – должен запуститься интерактивный интерпретатор. Если команда python3 не запустила интерпретатор – попробуйте просто python.
-  
-# Процесс разработки. Настройка git
+Your profile page tells people the story of your work through the repositories you're interested in, the contributions you've made, and the conversations you've had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! 
+To learn more about your user profile and adding and updating your profile README, read ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme). 
 
-http://git-scm.com/book/ru/v2
+### Using markdown on GitHub 
 
-Книга о распределённой системе контроля версий Git. Охватывает широкий спектр возможностей Git и поясняет всё на простых примерах. В версии на русском могут не открываться отдельные страницы, переключение языка в левом столбце.  
-  
-  
-  
- 
-Part I
-Использование GitHub
-====================
+You might have noticed already, but you can add some fun styling to your issues, pull requests, and files. ["Markdown"](https://guides.github.com/features/mastering-markdown/) is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point!
+To learn more about using GitHub’s flavor of markdown, read ["Basic Writing and Formatting Syntax"](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). 
 
-Аккаунт и репозитории на github.com
------------------------------------
+### Engaging with the GitHub community
 
-В первую очередь необходимо установить и настроить клиент git, https://git-scm.com/download/win.
+The GitHub community is vast. There are many types of people who use GitHub in their day to day—students like you, professional developers, hobbyists working on open source projects, and explorers who are just jumping into the world of software development on their own. There are many ways you can interact with the larger GitHub community, but here are three places where you can start. 
 
+#### Starring repositories 
 
-Затем надо зарегистрироваться на https://github.com/. После чего можно будет создавать свои репозитории. В ходе данного курса все необходимые репозитории для вашего кода будут создаваться автоматически при помощи GitHub Classrooms, но при желании или необходимости вы можете создавать их и самостоятельно.
+If you find a repository interesting or you want to keep track of it, star it! When you star a repository it’s also used as a signal to surface better recommendations on github.com/explore. If you’d like to get back to your starred repositories you can do so via your user profile. 
+To learn  more about starring repositories, read ["Saving Repositories with Stars"](https://docs.github.com/en/github/getting-started-with-github/saving-repositories-with-stars). 
 
-Теперь пошагово разберем как получить задание, выполнить его и отправить на проверку.
+#### Following users 
 
+You can follow people on GitHub to receive notifications about their activity and discover projects in their communities. When you follow a user, their public GitHub activity will show up on your dashboard so you can see all the cool things they are working on. 
+To learn more about following users, read ["Following People"](https://docs.github.com/en/github/getting-started-with-github/following-people).
 
-Выполнение домашних заданий
----------------------------
+#### Browsing GitHub Explore 
 
-Домашние задания выполняются на платформе GitHub Classrooms, которая обеспечивает автоматическое создание репозиториев для ваших решений. 
+GitHub Explore is a great place to do just that … explore :smile: You can find new projects, events, and developers to interact with.
 
-### Получение задания
+You can check out the GitHub Explore website [at github.com/explore](https://github.com/explore). The more you intereact with GitHub the more tailored your Explore view will be. 
 
-Для получения задания необходимо пройти по https://classroom.github.com/a/cK4zQmbk и нажать кнопку "Accept this assignment"
+## 📝 Optional next steps 
 
+* Open a pull request and let your teacher know that you’ve finished this course.  
+* Create a new markdown file in this repository. Let them know what you learned and what you are still confused about! Experiment with different styles!
+* Create your profile README. Let the world know a little bit more about you! What are you interested in learning? What are you working on? What's your favorite hobby? Learn more about creating your profile README in the document, ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme).
+* Go to your user dashboard and create a new repository. Experiment with the features within that repository to familiarize yourself with them. 
+* [Let us know what you liked or didn’t like about the content of this course](https://support.github.com/contact/education). What would you like to see more of? What would be interesting or helpful to your learning journey? 
 
-
-После этого система создаст для вас новый репозиторий и выдаст его адрес. 
-
-
-
-Перейдя по ссылке, вы окажетесь на сайте GitHub, и перед вами будет заготовка репозитория. В этом репозитории вы найдете описание задания, все необходимые информационные ресурсы и ссылки. 
-
-Чтобы приступить к выполнению, вам будет необходимо склонировать этот репозиторий на свой жесткий диск используя git-клиент.
-Если вы установили GitHub Desktop, то для этого достаточно нажать кнопку Clone or download и выбрать Open in desktop (если не произошел автоматический запуск программы, то перезапустите браузер):
-
-После клонирования вы сможете открыть репозиторий в проводнике Windows нажав на ссылку "open this repository":
-
-
-После этого переходим к выполнению задания.
-
-### Выполнение задания
-
-Для выполнения задания необходимо создать проект в среде разработки внутри только что склонированного репозитория (можно прямо в его корне). Этот пункт обязателен, если вы создадите проект в другом месте, то не сможете отправить его на проверку.
-
-
-
-### Сохранение изменений
-
-После того как вы создали проект, и написали какой-то код, вы можете зафиксировать свои изменения, для того, чтобы иметь возможность вернуться к предыдущей версии кода, если вдруг у вас что-то пошло не так. 
-
-
-### Отправка решения на проверку
-
-После того, как вы решили ваш вариант задания, и уверены, что все решено правильно (или не уверены, но дедлайн уже пришел), то изменения нужно выложить на GitHub и отправить на проверку.
-
-Для этого необходимо в клиенте Git открыть репозиторий задания и закоммитить все изменения. 
-
-КАК СДЕЛАТЬ ЭТО ЧЕРЕЗ Sublime:
-Необходим: git, sublime, установить плагин sublime text “git”
-
-Для этого надо через package control установить sublime text git
-После этого, открыв окно команд после установки плагина и напечатав ‘git’, можно увидеть доступные команды для работы с Git.
- 
-Одно из преимуществ командной строки Sublime перед терминалом — это поддержка автокомплита. Теперь не нужно печатать всю длинную команду «git add -A», достаточно всего лишь набрать "add".
-git add -A 
-git commit -m 'message' 
-git push
-
-
-
-
-### Ручная проверка
-
-После того как вы отправили задание на проверку может пройти несколько дней, как правило я проверяю на выходных. Если у меня не будет замечаний, то я закрою Issue, и вам придет уведомление. Если же будут какие-то замечания, то я отвечу комментарием к этому Issue и напишу что мне не нравится, вам так же придет об этом уведомление.
-
-
-
-
- # Литература, источники
- 
-   Документация Python https://docs.python.org/3/
-   
-   Есть утилита autopep8, которая позволяет автоматически приводить код к виду, соответствующему PEP 8. https://pypi.org/project/autopep8/
-   
-   Библиотеки, написанные сообществом, находятся на ресурсе PyPI (Python Package Index). https://pypi.org/
-
-    Именно с этого ресурса будут устанавливаться внешние пакеты, когда вы будете устанавливать их с помощью утилиты pip. Лучший способ найти библиотеку для решения той или иной       задачи – постараться загуглить ее – часто поиск Google выдает наиболее релевантный вариант. На GitHub есть коллекция хороших библиотек для решения всевозможных задач.
-   
-      Habrahabr.ru
-      
-      Большая база вопросов и ответов по Python сосредоточена на ресурсе Stack Overflow – вы будете часто натыкаться на него, когда будете искать решение в непонятных ситуациях.
-
-      https://stackoverflow.com/
-      
-      
-      На русском https://ru.stackoverflow.com/questions/tagged/python
-      
-      
-      https://github.com/bayandin/awesome-awesomeness
-      
-      Хорошие ресурсы для новичков в Python на русском языке:
-      
-      https://pythonworld.ru/samouchitel-python
-      
-      https://metanit.com/python/tutorial/
-      
-      
-      КНижки:
-      
-      Федоров Д. Ю. Программирование на языке высокого уровня Python : учеб. пособие. — М. : Издательство Юрайт, 2019. — 161 с.
-      
-      Tagliaferri L. How To Code in Python 3.- DigitalOcean, New York City, New York, USA.- ISBN 978-0-9997730-1-7
-      
-      Хеллман Д. Стандартная библиотека Python 3: справочник с примерами, 2-е изд. : Пер. с англ. — СПб. : ООО “Диалектика”, 2019. — 1376 с. : ил. LSBN 978-5-6040043-8-8 (рус.)
-      
-      Копец Д. Классические задачи Computer Science на языке Python. - СПб.: Питер, 2020. 256 с.: ил. - (Серия «Библиотека программиста).ISBN 978-5-4461-1428-3
-      
-      Марк Саммерфилд - Программирование на Python 3. Подробное руководство
-      
-      Марк Лутц - Изучаем Python, 4-е издание
-      
-      
-Курсы https://stepik.org/course/3356/syllabus
-Курсы яндекс
+## 📚  Resources 
+* [A short video explaining what GitHub is](https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=youtu.be) 
+* [Git and GitHub learning resources](https://docs.github.com/en/github/getting-started-with-github/git-and-github-learning-resources) 
+* [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
+* [How to use GitHub branches](https://www.youtube.com/watch?v=H5GJfcp3p4Q&feature=youtu.be)
+* [Interactive Git training materials](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class)
+* [GitHub's Learning Lab](https://lab.github.com/)
+* [Education community forum](https://education.github.community/)
+* [GitHub community forum](https://github.community/)

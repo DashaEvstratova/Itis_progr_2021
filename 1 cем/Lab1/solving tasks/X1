@@ -1,0 +1,13 @@
+A = int(input())
+B = int(input())
+c = A // B
+c = ((c+2) // (c+1)) % 2
+d = (c+1) % 2
+a1 = A*c + B*d
+b1 = B*c + A*d
+flag = not bool(A - a1)
+flagAnty = bool(A - a1)
+c = a1 % b1
+c = bool(c)
+d = not c
+print((d*'YES' + 'No'*c)*flag + (d*'NO' + 'Yes'*c)*flagAnty)

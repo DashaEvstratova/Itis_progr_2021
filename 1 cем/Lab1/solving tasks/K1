@@ -1,0 +1,12 @@
+number = int(input())
+line1 = '    _~_    '
+line2 = '   (o o)   '
+line3 = '  /  V  \  '
+line4 = ' /(  _  )\ '
+line5 = '   ^^ ^^   '
+
+print(line1 * number)
+print(line2 * number)
+print(line3 * number)
+print(line4 * number)
+print(line5 * number)

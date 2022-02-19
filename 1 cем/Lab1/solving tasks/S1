@@ -1,0 +1,9 @@
+hour1 = int(input())
+minut1 = int(input())
+second1 = int(input())
+hour2 = int(input())
+minut2 = int(input())
+second2 = int(input())
+summ1 = hour1*3600 + minut1*60 + second1
+summ2 = hour2*3600 + minut2*60 + second2
+print(summ2 - summ1)
