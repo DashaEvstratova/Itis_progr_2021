@@ -42,26 +42,29 @@ class LinkedList:
         a = None
         return
     while a:
-    	if a.data == k:
-    		break
-    	b = a
-    	a = a.next
+        if a.data == k:
+    	    break
+        b = a
+        a = a.next
     if a == None:
     	return
     b.next = a.next
     a = None
   def delAllk(self, k): # Удаление всех элементов = k
     a = self.head
+    b = a
+    if self.head.data == k:
+    	self.head = self.head.next
     while a:
-    	b = a
-    	if a.data == k:
-        	b.next = a.next
-      	b = a
-      	a = a.next
+        if a.data == k:
+            b.next = a.next
+        b = a
+        a = a.next
     if a == None:
     	return
     b.next = a.next
     a = None
+    
   def addend(self, new):
     pass
   def Del(self): # Удаление первого элемента
@@ -80,7 +83,7 @@ class LinkedList:
   def Delprend(self): # Удаление предпоследнего элемента
     a = self.head
     if not a:
-      return 
+      return
     while a.next:
       b = a
       a = a.next
